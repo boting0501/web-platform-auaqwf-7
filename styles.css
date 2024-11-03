@@ -66,9 +66,13 @@ h1 {
   background-color: #0056b3;
 }
   img {
-          
+            
             width: 200px; /* 圖片寬度調整 */
             height: auto; /* 自動高度 */
             margin: 10px 0; /* 圖片上下間距 */
+            transition: transform 0.5s; /* 加入平滑旋轉效果 */
         }
 
+        img:hover {
+            transform: rotate(10deg); /* 當鼠標懸停時旋轉 */
+        }
