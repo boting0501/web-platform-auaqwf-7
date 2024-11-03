@@ -66,7 +66,7 @@ h1 {
   background-color: #0056b3;
 }
   img {
-            display: none; /* 初始隱藏圖片 */
+          
             width: 200px; /* 圖片寬度調整 */
             height: auto; /* 自動高度 */
             margin: 10px 0; /* 圖片上下間距 */
