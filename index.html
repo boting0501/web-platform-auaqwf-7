@@ -7,16 +7,21 @@
     <link rel="stylesheet" href="styles.css">
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
-  <script>
+ <script>
     $(document).ready(function() {
-      $('.button-link').click(function(event) {
-        event.preventDefault(); // 防止連結跳轉，讓動畫完成後跳轉
-        $(this).effect('bounce', { times: 3 }, 500, function() {
-          window.location.href = $(this).attr('href'); // 動畫完成後跳轉到對應頁面
+        $('.button-link').click(function(event) {
+            event.preventDefault(); // 防止連結跳轉，讓動畫完成後跳轉
+            $(this).effect('bounce', { times: 3 }, 500, function() {
+                window.location.href = $(this).attr('href'); // 動畫完成後跳轉到對應頁面
+            });
         });
-      });
+
+        // 當頁面加載時，淡入顯示圖片
+        $("img").each(function(index) {
+            $(this).delay(500 * index).fadeIn(1000); // 每張圖片延遲 500ms 顯示
+        });
     });
-  </script>
+</script>
     
   </head>
   <body>
