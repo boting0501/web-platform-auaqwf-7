@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
+  <head>
+    <title>Home</title>
+    <link rel="stylesheet" href="styles.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      $('.button-link').click(function(event) {
+        event.preventDefault(); // 防止連結跳轉，讓動畫完成後跳轉
+        $(this).effect('bounce', { times: 3 }, 500, function() {
+          window.location.href = $(this).attr('href'); // 動畫完成後跳轉到對應頁面
+        });
+      });
+    });
+  </script>
+    
+  </head>
+  <body>
+    
+    
+    <main>
+      <h1>kpop introduce</h1>
+      <p> 這邊會介紹三首我喜歡的歌，可以根據圖片選想要聽的，非常推薦你們去聽</p>
+      <p>點選你想聽的歌</p>
+      <a href="https://boting0501.github.io/web-platform-auaqwf-7/page2.html" class="button-link">Small girl</a>
+      <img class="picture1" src ="https://i.kfs.io/album/global/271381838,0v1/fit/500x500.jpg" >
+      <a href="https://boting0501.github.io/web-platform-auaqwf-7/page3.html" class="button-link">Like that</a>
+      <img class="picture2" src="https://i.kfs.io/album/global/268305943,0v1/fit/500x500.jpg">
+      <a href="https://boting0501.github.io/web-platform-auaqwf-7/page4.html" class="button-link">Water</a>
+      <img class="picture3" src="https://i.kfs.io/album/global/259853648,1v1/fit/500x500.jpg">
+      
+    </main>
+  </body>
+</html>
